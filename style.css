@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px;
+    background-color: hsl(233, 47%, 7%);
+    /* font-family: 'Inter', sans-serif; */
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.the-card{
+    background-color: hsl(244, 38%, 16%);
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0;
+    max-width: 1020px;
+}
+
+
+.text-area{
+    padding: 4rem 5rem 3rem 3.5rem;
+}
+
+.title{
+    font-weight: bold;
+    margin-bottom: 2rem;
+    word-spacing: 2px;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+.main-paragraph{
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.8;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4rem;
+    width: 80%;
+}
+
+.number{
+    font-size: 20px;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+}
+
+.stat-heading{
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.6);
+    letter-spacing: 1px;
+    font-size: 10px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.img-area{
+    position: relative;
+}
+
+.img-area::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: hsl(277, 64%, 61%);
+    z-index: 100;
+    top: 0;
+    right: 0;
+    opacity: 0.48;
+}
+
+
+.img-area img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+}
+
+
+
+
+@media screen and (max-width : 475px) {
+    body{
+        text-align: center;
+    }
+    .the-card{
+        /* margin-top: 0.5rem; */
+        width: 90%;
+        flex-wrap:wrap;
+    }
+    
+    .text-area{
+        padding: 2rem;
+    }
+
+    .img-area{
+        height: auto;
+    }
+
+    .img-area img{
+        object-fit: contain;
+        height: 100%;
+    }
+    
+    .img-area::after{
+        height: 100%;
+    }
+
+    .text-area{
+        padding: 0.5rem 0.5rem 2rem 0.5rem;
+    }
+
+    .title{
+        margin-top: 1rem;
+        margin-bottom: 0.8rem;
+        font-size: 2rem;
+    }
+
+    .main-paragraph{
+        margin: 0.5rem;
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .intro{
+        flex-direction: column;
+        margin: 2rem auto 0 auto;
+    }
+
+    .template-field{
+        margin: 1rem 0;
+    }
+
+    .number{
+        font-size: 1.8rem;
+    }
+
+    .stat-heading{
+        font-size: 1rem;
+    }
+
+    
+}
